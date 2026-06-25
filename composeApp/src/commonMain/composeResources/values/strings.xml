@@ -345,7 +345,7 @@
     <string name="settings_sandbox_subtab_packages">Packages</string>
     <string name="sandbox_session_chip_session">Session</string>
     <string name="sandbox_session_chip_temporary">Temporary</string>
-    <string name="sandbox_packages_search_hint">Search packages</string>
+    <string name="sandbox_packages_search_hint">Search Kali Linux packages...</string>
     <string name="sandbox_packages_action_install">Install</string>
     <string name="sandbox_packages_action_uninstall">Uninstall</string>
     <string name="sandbox_packages_action_upgrade">Upgrade packages</string>

@@ -36,8 +36,8 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
-val darkPurple = Color(0xFF6200EE)
-val lightPurple = Color(0xff8063C5)
+val darkPurple = Color(0xFF326CE5)
+val lightPurple = Color(0xFF2B52C3)
 val gradientBrush = androidx.compose.ui.graphics.Brush.horizontalGradient(listOf(darkPurple, lightPurple))
 
 // Animated border gradient colors
@@ -48,8 +48,8 @@ val gradientMagenta = Color(0xFFE040FB)
 fun Modifier.handCursor() = pointerHoverIcon(PointerIcon.Hand, overrideDescendants = true)
 
 val DarkColorScheme = darkColorScheme(
-    primary = Color(0xFFBB86FC),
-    onPrimary = Color(0xFF000000),
+    primary = Color(0xFF326CE5),
+    onPrimary = Color(0xFFFFFFFF),
     surface = Color(0xFF1E1E1E),
     background = Color(0xFF121212),
     onBackground = Color(0xFFFFFFFF),
