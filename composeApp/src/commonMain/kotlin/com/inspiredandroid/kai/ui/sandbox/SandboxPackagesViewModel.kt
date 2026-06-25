@@ -242,7 +242,7 @@ class SandboxPackagesViewModel(
 
         fun hasAptErrors(): Boolean {
             if (exit != 0) return true
-            val errorPrefixes = listOf("E:", "Err:", "dpkg:")
+            val errorPrefixes = listOf("E:", "Err:", "dpkg: error")
             return stdout.lineSequence().any { line -> errorPrefixes.any { line.startsWith(it) } } ||
                 stderr.lineSequence().any { line -> errorPrefixes.any { line.startsWith(it) } }
         }

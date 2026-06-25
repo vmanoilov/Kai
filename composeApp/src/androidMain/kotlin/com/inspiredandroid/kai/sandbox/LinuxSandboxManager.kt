@@ -115,6 +115,7 @@ class LinuxSandboxManager(
         currentJob = null
         // Clean up partial downloads
         File(sandboxDir, "rootfs.tar.gz").delete()
+        File(sandboxDir, "rootfs.tar.xz").delete()
         // Determine correct state based on what exists
         val rootfs = File(sandboxDir, "rootfs")
         if (rootfs.isDirectory && File(prootPath).exists()) {

@@ -144,19 +144,23 @@ class RootfsDownloader(private val httpClient: HttpClient) {
             nextLongLink = null // Consume it
 
             if (typeFlag.toInt().toChar() == 'L') {
+                if (size > 32768) throw IOException("Tar entry name too long: $size")
                 val nameBytes = ByteArray(size.toInt())
                 readFully(inputStream, nameBytes)
                 nextLongName = String(nameBytes, Charsets.US_ASCII).trimEnd('\u0000')
                 val padding = alignToBlock(size) - size
+
                 if (padding > 0) skipBytes(inputStream, padding)
                 continue
             }
 
             if (typeFlag.toInt().toChar() == 'K') {
+                if (size > 32768) throw IOException("Tar entry link name too long: $size")
                 val linkBytes = ByteArray(size.toInt())
                 readFully(inputStream, linkBytes)
                 nextLongLink = String(linkBytes, Charsets.US_ASCII).trimEnd('\u0000')
                 val padding = alignToBlock(size) - size
+
                 if (padding > 0) skipBytes(inputStream, padding)
                 continue
             }
