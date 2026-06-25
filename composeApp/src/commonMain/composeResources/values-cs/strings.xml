@@ -214,7 +214,7 @@
     <string name="notification_channel_name">AI oznámení</string>
     <string name="notification_channel_description">Oznámení odeslaná AI asistentem</string>
     <string name="settings_tab_sandbox">Linux Sandbox</string>
-    <string name="settings_sandbox_description">Nainstalujte prostředí Linux, aby AI mohla vaším jménem spouštět příkazy shellu, skripty a nástroje. Běží bezpečně uvnitř aplikace. ~3 MB ke stažení.</string>
+    <string name="settings_sandbox_description">Nainstalujte prostředí Linux, aby AI mohla vaším jménem spouštět příkazy shellu, skripty a nástroje. Běží bezpečně uvnitř aplikace.</string>
     <string name="settings_sandbox_install">Nainstalovat</string>
     <string name="settings_sandbox_install_packages">Nainstalovat základní balíčky</string>
     <string name="settings_sandbox_uninstall">Odinstalovat</string>
