@@ -29,9 +29,7 @@ Why? Because an AI assistant with access to Kali's massive arsenal of networking
 
 Enable it in **Settings > Linux Sandbox** and watch your AI assistant turn into a full-fledged cybersecurity companion!
 
-<div align="center">
-<img src="screenshots/mobile-7.png" alt="Linux Sandbox" height="300">
-</div>
+
 
 ---
 
