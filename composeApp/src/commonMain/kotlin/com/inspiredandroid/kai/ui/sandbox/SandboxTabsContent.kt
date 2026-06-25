@@ -128,6 +128,14 @@ internal fun SandboxTabsContent(
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
 
+                Spacer(Modifier.height(8.dp))
+
+                Text(
+                    text = "⚠️ Warning: The Kali Linux installation requires ~2 GB to download and ~8-10 GB of free space once fully extracted. The sandbox will continue to grow as you install more tools.",
+                    style = MaterialTheme.typography.bodySmall,
+                    color = MaterialTheme.colorScheme.error,
+                )
+
                 if (sandboxState.sandboxProgress != null) {
                     SandboxProgressRow(sandboxState.sandboxProgress, sandboxState.sandboxStatusText, onCancelSandbox)
                 } else if (sandboxState.isWorking) {
