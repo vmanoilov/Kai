@@ -132,10 +132,13 @@ class ProotExecutor(
 
     private fun buildProcessArgs(command: String, workingDir: String): Array<String> = arrayOf(
         prootPath,
+        "--link2symlink",
+        "--sysvipc",
         "--rootfs=$rootfsPath",
         "--bind=/dev",
         "--bind=/proc",
         "--bind=/sys",
+        "--bind=/sdcard",
         "--bind=$homePath:/root",
         "--bind=$tmpPath:/tmp",
         "-0",
