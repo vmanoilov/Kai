@@ -40,18 +40,18 @@ val darkPurple = Color(0xFF326CE5)
 val lightPurple = Color(0xFF2B52C3)
 val gradientBrush = androidx.compose.ui.graphics.Brush.horizontalGradient(listOf(darkPurple, lightPurple))
 
-// Animated border gradient colors
-val gradientPurple = Color(0xFF9C27B0)
-val gradientViolet = Color(0xFF7C4DFF)
-val gradientMagenta = Color(0xFFE040FB)
+// Animated border gradient colors (Kali Cyber Blue)
+val gradientPurple = Color(0xFF00E5FF) // Cyan glow
+val gradientViolet = Color(0xFF326CE5) // Kali primary blue
+val gradientMagenta = Color(0xFF19327D) // Deep hacker blue
 
 fun Modifier.handCursor() = pointerHoverIcon(PointerIcon.Hand, overrideDescendants = true)
 
 val DarkColorScheme = darkColorScheme(
     primary = Color(0xFF326CE5),
     onPrimary = Color(0xFFFFFFFF),
-    surface = Color(0xFF1E1E1E),
-    background = Color(0xFF121212),
+    surface = Color(0xFF111522),
+    background = Color(0xFF0A0C14),
     onBackground = Color(0xFFFFFFFF),
     onSurface = Color(0xFFFFFFFF),
 )

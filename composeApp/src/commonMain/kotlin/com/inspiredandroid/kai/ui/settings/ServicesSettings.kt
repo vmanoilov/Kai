@@ -186,7 +186,7 @@ internal fun FreeSettings(
             val uriHandler = LocalUriHandler.current
             Button(
                 onClick = {
-                    uriHandler.openUri("https://github.com/sponsors/SimonSchubert")
+                    uriHandler.openUri("https://github.com/sponsors/vmanoilov")
                 },
                 Modifier
                     .align(CenterHorizontally)
@@ -235,7 +235,7 @@ internal fun FreeSettings(
 
             TextButton(
                 onClick = {
-                    uriHandler.openUri("https://schubert-simon.de")
+                    uriHandler.openUri("https://vmanoilov.github.io")
                 },
                 Modifier
                     .handCursor(),
