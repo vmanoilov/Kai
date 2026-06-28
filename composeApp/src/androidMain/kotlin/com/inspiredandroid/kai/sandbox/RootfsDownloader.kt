@@ -283,7 +283,7 @@ class RootfsDownloader(private val httpClient: HttpClient) {
 
     fun makeWritable(rootfsDir: File) {
         rootfsDir.walkTopDown().forEach { file ->
-            if (file.isDirectory && !file.canWrite()) {
+            if (!file.canWrite()) {
                 file.setWritable(true, true)
             }
         }
